@@ -37,7 +37,7 @@ An interactive **Power BI** dashboard that analyses diagnosis patterns and treat
 **Requirements:** Power BI Desktop (free download at [powerbi.microsoft.com](https://powerbi.microsoft.com))
 
 1. Clone or download this repository
-2. Open `Ignite2 - 07 - Diagnosis Trend Explorer - Insights into Treatment Demand.pbix` in Power BI Desktop
+2. Open `Diagnosis Trend Explorer - Insights into Treatment Demand.pbix` in Power BI Desktop
 3. The report loads with pre-embedded data — no additional setup required
 
 > If prompted to refresh data sources, point them to the CSV files in the `/data` folder.
