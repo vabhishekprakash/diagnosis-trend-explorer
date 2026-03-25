@@ -1,0 +1,9 @@
+HospitalID,HospitalName,HospitalType,City,State,TotalBeds,ICUBeds,AccreditationLevel
+HSP-001,Apollo Hospitals Hyderabad,Private,Hyderabad,Telangana,500,50,NABH
+HSP-002,KIMS Hospital Hyderabad,Private,Hyderabad,Telangana,350,35,NABH
+HSP-003,Nizam's Institute of Medical Sciences,Government,Hyderabad,Telangana,1200,120,JCI
+HSP-004,Gandhi General Hospital,Government,Hyderabad,Telangana,800,60,None
+HSP-005,Yashoda Hospitals Secunderabad,Private,Secunderabad,Telangana,400,40,NABH
+HSP-006,MGM Hospital Warangal,Trust,Warangal,Telangana,300,25,None
+HSP-007,Care Hospitals Banjara Hills,Private,Hyderabad,Telangana,250,30,NABH
+HSP-008,Government General Hospital Vijayawada,Government,Vijayawada,Andhra Pradesh,600,55,None

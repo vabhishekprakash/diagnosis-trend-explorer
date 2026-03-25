@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1B2A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1F3A5F;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="factGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1F4E79;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E74B5;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dimGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#375623;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#548235;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="dateGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7B2C2C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C00000;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="3" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="url(#bgGrad)"/>
+  
+  <!-- Grid lines -->
+  <g opacity="0.05" stroke="#FFFFFF" stroke-width="0.5">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="0" y1="700" x2="1200" y2="700"/>
+    <line x1="0" y1="800" x2="1200" y2="800"/>
+    <line x1="100" y1="0" x2="100" y2="900"/>
+    <line x1="300" y1="0" x2="300" y2="900"/>
+    <line x1="500" y1="0" x2="500" y2="900"/>
+    <line x1="700" y1="0" x2="700" y2="900"/>
+    <line x1="900" y1="0" x2="900" y2="900"/>
+    <line x1="1100" y1="0" x2="1100" y2="900"/>
+  </g>
+
+  <!-- Title Banner -->
+  <rect x="0" y="0" width="1200" height="80" fill="#1F4E79" opacity="0.9"/>
+  <rect x="0" y="75" width="1200" height="4" fill="#00B0F0"/>
+  <text x="600" y="32" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="white" text-anchor="middle">🏥 DIAGNOSIS TREND EXPLORER — DATA MODEL</text>
+  <text x="600" y="60" font-family="Arial, sans-serif" font-size="14" fill="#BDD7EE" text-anchor="middle">Star Schema Design | Power BI Mini Project | B.Tech III Year</text>
+
+  <!-- Legend -->
+  <rect x="30" y="95" width="220" height="80" rx="8" fill="#000" fill-opacity="0.3" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="45" y="115" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF">LEGEND</text>
+  <rect x="45" y="122" width="18" height="12" rx="3" fill="url(#factGrad)"/>
+  <text x="70" y="133" font-family="Arial" font-size="11" fill="#BDD7EE">Fact Table (Central)</text>
+  <rect x="45" y="140" width="18" height="12" rx="3" fill="url(#dimGrad)"/>
+  <text x="70" y="151" font-family="Arial" font-size="11" fill="#BDD7EE">Dimension Tables</text>
+  <rect x="45" y="158" width="18" height="12" rx="3" fill="url(#dateGrad)"/>
+  <text x="70" y="169" font-family="Arial" font-size="11" fill="#BDD7EE">Date Dimension</text>
+
+  <!-- Schema Info Box -->
+  <rect x="950" y="95" width="220" height="80" rx="8" fill="#000" fill-opacity="0.3" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="1060" y="115" font-family="Arial" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle">SCHEMA INFO</text>
+  <text x="965" y="135" font-family="Arial" font-size="11" fill="#BDD7EE">Schema Type: Star Schema</text>
+  <text x="965" y="152" font-family="Arial" font-size="11" fill="#BDD7EE">Fact Tables: 1 | Dimensions: 5</text>
+  <text x="965" y="169" font-family="Arial" font-size="11" fill="#BDD7EE">Relationships: 5 (Many-to-One)</text>
+
+  <!-- ============ FACT TABLE (CENTER) ============ -->
+  <g filter="url(#shadow)">
+    <rect x="430" y="310" width="340" height="380" rx="12" fill="url(#factGrad)" stroke="#00B0F0" stroke-width="2.5"/>
+    <!-- Header -->
+    <rect x="430" y="310" width="340" height="42" rx="12" fill="#0D3257"/>
+    <rect x="430" y="340" width="340" height="12" fill="#0D3257"/>
+    <text x="600" y="326" font-family="Arial" font-size="11" fill="#7CBDE8" text-anchor="middle" font-weight="bold">⚡ FACT TABLE</text>
+    <text x="600" y="343" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">Fact_Treatments</text>
+    <line x1="430" y1="355" x2="770" y2="355" stroke="#00B0F0" stroke-width="1.5"/>
+    <!-- PK Row -->
+    <rect x="435" y="358" width="330" height="22" rx="4" fill="#000" fill-opacity="0.2"/>
+    <text x="448" y="373" font-family="Arial" font-size="12" fill="#FFD700" font-weight="bold">🔑 TreatmentID</text>
+    <text x="760" y="373" font-family="Arial" font-size="10" fill="#BDD7EE" text-anchor="end">PK • Text</text>
+    <!-- FK rows -->
+    <text x="448" y="397" font-family="Arial" font-size="12" fill="#98FF98">🔗 PatientID</text>
+    <text x="760" y="397" font-family="Arial" font-size="10" fill="#BDD7EE" text-anchor="end">FK • Text</text>
+    <text x="448" y="418" font-family="Arial" font-size="12" fill="#98FF98">🔗 DiagnosisID</text>
+    <text x="760" y="418" font-family="Arial" font-size="10" fill="#BDD7EE" text-anchor="end">FK • Text</text>
+    <text x="448" y="439" font-family="Arial" font-size="12" fill="#98FF98">🔗 DoctorID</text>
+    <text x="760" y="439" font-family="Arial" font-size="10" fill="#BDD7EE" text-anchor="end">FK • Text</text>
+    <text x="448" y="460" font-family="Arial" font-size="12" fill="#98FF98">🔗 HospitalID</text>
+    <text x="760" y="460" font-family="Arial" font-size="10" fill="#BDD7EE" text-anchor="end">FK • Text</text>
+    <text x="448" y="481" font-family="Arial" font-size="12" fill="#98FF98">🔗 AdmissionDate</text>
+    <text x="760" y="481" font-family="Arial" font-size="10" fill="#BDD7EE" text-anchor="end">FK • Date</text>
+    <line x1="435" y1="490" x2="765" y2="490" stroke="#FFFFFF" stroke-opacity="0.2" stroke-width="1"/>
+    <!-- Measures -->
+    <text x="448" y="508" font-family="Arial" font-size="11" fill="#E0E0E0">DischargeDate</text>
+    <text x="760" y="508" font-family="Arial" font-size="10" fill="#BDD7EE" text-anchor="end">Date</text>
+    <text x="448" y="526" font-family="Arial" font-size="11" fill="#E0E0E0">LengthOfStay</text>
+    <text x="760" y="526" font-family="Arial" font-size="10" fill="#BDD7EE" text-anchor="end">Whole Number</text>
+    <text x="448" y="544" font-family="Arial" font-size="11" fill="#E0E0E0">TreatmentType</text>
+    <text x="760" y="544" font-family="Arial" font-size="10" fill="#BDD7EE" text-anchor="end">Text</text>
+    <text x="448" y="562" font-family="Arial" font-size="11" fill="#E0E0E0">TreatmentCost</text>
+    <text x="760" y="562" font-family="Arial" font-size="10" fill="#BDD7EE" text-anchor="end">Decimal</text>
+    <text x="448" y="580" font-family="Arial" font-size="11" fill="#E0E0E0">MedicationCost</text>
+    <text x="760" y="580" font-family="Arial" font-size="10" fill="#BDD7EE" text-anchor="end">Decimal</text>
+    <text x="448" y="598" font-family="Arial" font-size="11" fill="#E0E0E0">ProcedureCost</text>
+    <text x="760" y="598" font-family="Arial" font-size="10" fill="#BDD7EE" text-anchor="end">Decimal</text>
+    <text x="448" y="616" font-family="Arial" font-size="11" fill="#E0E0E0">IsReadmission</text>
+    <text x="760" y="616" font-family="Arial" font-size="10" fill="#BDD7EE" text-anchor="end">Text</text>
+    <text x="448" y="634" font-family="Arial" font-size="11" fill="#E0E0E0">OutcomeStatus</text>
+    <text x="760" y="634" font-family="Arial" font-size="10" fill="#BDD7EE" text-anchor="end">Text</text>
+    <text x="448" y="652" font-family="Arial" font-size="11" fill="#E0E0E0">Ward</text>
+    <text x="760" y="652" font-family="Arial" font-size="10" fill="#BDD7EE" text-anchor="end">Text</text>
+    <!-- Row count badge -->
+    <rect x="470" y="668" width="260" height="16" rx="8" fill="#000" fill-opacity="0.3"/>
+    <text x="600" y="680" font-family="Arial" font-size="10" fill="#7CBDE8" text-anchor="middle" font-weight="bold">687 Records | 15 Columns</text>
+  </g>
+
+  <!-- ============ DIM_PATIENTS (LEFT) ============ -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="200" width="270" height="310" rx="12" fill="url(#dimGrad)" stroke="#70AD47" stroke-width="2"/>
+    <rect x="30" y="200" width="270" height="42" rx="12" fill="#1E3A12"/>
+    <rect x="30" y="230" width="270" height="12" fill="#1E3A12"/>
+    <text x="165" y="216" font-family="Arial" font-size="11" fill="#A9D18E" text-anchor="middle" font-weight="bold">👤 DIMENSION</text>
+    <text x="165" y="233" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">Dim_Patients</text>
+    <line x1="30" y1="245" x2="300" y2="245" stroke="#70AD47" stroke-width="1.5"/>
+    <rect x="35" y="248" width="260" height="22" rx="4" fill="#000" fill-opacity="0.15"/>
+    <text x="48" y="263" font-family="Arial" font-size="12" fill="#FFD700" font-weight="bold">🔑 PatientID</text>
+    <text x="292" y="263" font-family="Arial" font-size="10" fill="#D0E8C0" text-anchor="end">PK</text>
+    <text x="48" y="284" font-family="Arial" font-size="11" fill="#E0E0E0">FirstName, LastName</text>
+    <text x="48" y="302" font-family="Arial" font-size="11" fill="#E0E0E0">Gender</text>
+    <text x="48" y="320" font-family="Arial" font-size="11" fill="#E0E0E0">DateOfBirth</text>
+    <text x="48" y="338" font-family="Arial" font-size="11" fill="#E0E0E0">Age</text>
+    <text x="48" y="356" font-family="Arial" font-size="11" fill="#FFB347">⚡ AgeGroup</text>
+    <text x="292" y="356" font-family="Arial" font-size="9" fill="#A9D18E" text-anchor="end">Calc</text>
+    <text x="48" y="374" font-family="Arial" font-size="11" fill="#E0E0E0">BloodType</text>
+    <text x="48" y="392" font-family="Arial" font-size="11" fill="#E0E0E0">City, State</text>
+    <text x="48" y="410" font-family="Arial" font-size="11" fill="#E0E0E0">ContactNumber</text>
+    <text x="48" y="428" font-family="Arial" font-size="11" fill="#E0E0E0">InsuranceProvider</text>
+    <text x="48" y="446" font-family="Arial" font-size="11" fill="#E0E0E0">InsuranceType</text>
+    <rect x="50" y="456" width="210" height="16" rx="8" fill="#000" fill-opacity="0.3"/>
+    <text x="155" y="468" font-family="Arial" font-size="10" fill="#A9D18E" text-anchor="middle" font-weight="bold">542 Patients | 13 Columns</text>
+    <!-- Cardinality -->
+    <text x="165" y="498" font-family="Arial" font-size="11" fill="#70AD47" text-anchor="middle" font-weight="bold">Many (*) ←→ One (1)</text>
+  </g>
+
+  <!-- ============ DIM_DIAGNOSES (TOP) ============ -->
+  <g filter="url(#shadow)">
+    <rect x="390" y="105" width="270" height="185" rx="12" fill="url(#dimGrad)" stroke="#70AD47" stroke-width="2"/>
+    <rect x="390" y="105" width="270" height="42" rx="12" fill="#1E3A12"/>
+    <rect x="390" y="135" width="270" height="12" fill="#1E3A12"/>
+    <text x="525" y="121" font-family="Arial" font-size="11" fill="#A9D18E" text-anchor="middle" font-weight="bold">🔬 DIMENSION</text>
+    <text x="525" y="138" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">Dim_Diagnoses</text>
+    <line x1="390" y1="150" x2="660" y2="150" stroke="#70AD47" stroke-width="1.5"/>
+    <rect x="395" y="153" width="260" height="22" rx="4" fill="#000" fill-opacity="0.15"/>
+    <text x="408" y="168" font-family="Arial" font-size="12" fill="#FFD700" font-weight="bold">🔑 DiagnosisID</text>
+    <text x="652" y="168" font-family="Arial" font-size="10" fill="#D0E8C0" text-anchor="end">PK</text>
+    <text x="408" y="188" font-family="Arial" font-size="11" fill="#E0E0E0">DiagnosisName, ICDCode</text>
+    <text x="408" y="206" font-family="Arial" font-size="11" fill="#E0E0E0">Category, SubCategory</text>
+    <text x="408" y="224" font-family="Arial" font-size="11" fill="#E0E0E0">Severity</text>
+    <text x="408" y="242" font-family="Arial" font-size="11" fill="#E0E0E0">IsChronicDisease</text>
+    <text x="408" y="260" font-family="Arial" font-size="11" fill="#E0E0E0">DepartmentMapping</text>
+    <rect x="415" y="272" width="200" height="14" rx="7" fill="#000" fill-opacity="0.3"/>
+    <text x="515" y="283" font-family="Arial" font-size="10" fill="#A9D18E" text-anchor="middle" font-weight="bold">25 Diagnoses | 8 Columns</text>
+  </g>
+
+  <!-- ============ DIM_DOCTORS (RIGHT) ============ -->
+  <g filter="url(#shadow)">
+    <rect x="900" y="200" width="270" height="260" rx="12" fill="url(#dimGrad)" stroke="#70AD47" stroke-width="2"/>
+    <rect x="900" y="200" width="270" height="42" rx="12" fill="#1E3A12"/>
+    <rect x="900" y="230" width="270" height="12" fill="#1E3A12"/>
+    <text x="1035" y="216" font-family="Arial" font-size="11" fill="#A9D18E" text-anchor="middle" font-weight="bold">👨‍⚕️ DIMENSION</text>
+    <text x="1035" y="233" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">Dim_Doctors</text>
+    <line x1="900" y1="245" x2="1170" y2="245" stroke="#70AD47" stroke-width="1.5"/>
+    <rect x="905" y="248" width="260" height="22" rx="4" fill="#000" fill-opacity="0.15"/>
+    <text x="918" y="263" font-family="Arial" font-size="12" fill="#FFD700" font-weight="bold">🔑 DoctorID</text>
+    <text x="1162" y="263" font-family="Arial" font-size="10" fill="#D0E8C0" text-anchor="end">PK</text>
+    <text x="918" y="283" font-family="Arial" font-size="11" fill="#E0E0E0">DoctorName</text>
+    <text x="918" y="301" font-family="Arial" font-size="11" fill="#E0E0E0">Specialization</text>
+    <text x="918" y="319" font-family="Arial" font-size="11" fill="#E0E0E0">Department</text>
+    <text x="918" y="337" font-family="Arial" font-size="11" fill="#E0E0E0">Qualification</text>
+    <text x="918" y="355" font-family="Arial" font-size="11" fill="#E0E0E0">YearsOfExperience</text>
+    <text x="918" y="373" font-family="Arial" font-size="11" fill="#98FF98">🔗 HospitalID</text>
+    <text x="1162" y="373" font-family="Arial" font-size="10" fill="#D0E8C0" text-anchor="end">FK</text>
+    <text x="918" y="391" font-family="Arial" font-size="11" fill="#E0E0E0">ConsultationFee</text>
+    <rect x="920" y="402" width="220" height="14" rx="7" fill="#000" fill-opacity="0.3"/>
+    <text x="1030" y="413" font-family="Arial" font-size="10" fill="#A9D18E" text-anchor="middle" font-weight="bold">15 Doctors | 8 Columns</text>
+    <text x="1035" y="448" font-family="Arial" font-size="11" fill="#70AD47" text-anchor="middle" font-weight="bold">Many (*) ←→ One (1)</text>
+  </g>
+
+  <!-- ============ DIM_HOSPITALS (BOTTOM RIGHT) ============ -->
+  <g filter="url(#shadow)">
+    <rect x="850" y="550" width="310" height="240" rx="12" fill="url(#dimGrad)" stroke="#70AD47" stroke-width="2"/>
+    <rect x="850" y="550" width="310" height="42" rx="12" fill="#1E3A12"/>
+    <rect x="850" y="580" width="310" height="12" fill="#1E3A12"/>
+    <text x="1005" y="566" font-family="Arial" font-size="11" fill="#A9D18E" text-anchor="middle" font-weight="bold">🏥 DIMENSION</text>
+    <text x="1005" y="583" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">Dim_Hospitals</text>
+    <line x1="850" y1="595" x2="1160" y2="595" stroke="#70AD47" stroke-width="1.5"/>
+    <rect x="855" y="598" width="300" height="22" rx="4" fill="#000" fill-opacity="0.15"/>
+    <text x="868" y="613" font-family="Arial" font-size="12" fill="#FFD700" font-weight="bold">🔑 HospitalID</text>
+    <text x="1152" y="613" font-family="Arial" font-size="10" fill="#D0E8C0" text-anchor="end">PK</text>
+    <text x="868" y="633" font-family="Arial" font-size="11" fill="#E0E0E0">HospitalName</text>
+    <text x="868" y="651" font-family="Arial" font-size="11" fill="#E0E0E0">HospitalType</text>
+    <text x="868" y="669" font-family="Arial" font-size="11" fill="#E0E0E0">City, State</text>
+    <text x="868" y="687" font-family="Arial" font-size="11" fill="#E0E0E0">TotalBeds, ICUBeds</text>
+    <text x="868" y="705" font-family="Arial" font-size="11" fill="#E0E0E0">AccreditationLevel</text>
+    <rect x="870" y="716" width="250" height="14" rx="7" fill="#000" fill-opacity="0.3"/>
+    <text x="995" y="727" font-family="Arial" font-size="10" fill="#A9D18E" text-anchor="middle" font-weight="bold">8 Hospitals | 8 Columns</text>
+    <text x="1005" y="778" font-family="Arial" font-size="11" fill="#70AD47" text-anchor="middle" font-weight="bold">Many (*) ←→ One (1)</text>
+  </g>
+
+  <!-- ============ DIM_DATE (BOTTOM LEFT) ============ -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="560" width="280" height="240" rx="12" fill="url(#dateGrad)" stroke="#FF4444" stroke-width="2"/>
+    <rect x="30" y="560" width="280" height="42" rx="12" fill="#4A1010"/>
+    <rect x="30" y="590" width="280" height="12" fill="#4A1010"/>
+    <text x="170" y="576" font-family="Arial" font-size="11" fill="#FFB3B3" text-anchor="middle" font-weight="bold">📅 DATE DIMENSION (DAX)</text>
+    <text x="170" y="593" font-family="Arial" font-size="16" fill="white" text-anchor="middle" font-weight="bold">Dim_Date</text>
+    <line x1="30" y1="605" x2="310" y2="605" stroke="#FF6666" stroke-width="1.5"/>
+    <rect x="35" y="608" width="270" height="22" rx="4" fill="#000" fill-opacity="0.15"/>
+    <text x="48" y="623" font-family="Arial" font-size="12" fill="#FFD700" font-weight="bold">🔑 Date</text>
+    <text x="302" y="623" font-family="Arial" font-size="10" fill="#FFB3B3" text-anchor="end">PK • Date</text>
+    <text x="48" y="643" font-family="Arial" font-size="11" fill="#E0E0E0">Day, DayName</text>
+    <text x="48" y="661" font-family="Arial" font-size="11" fill="#E0E0E0">Week, Month</text>
+    <text x="48" y="679" font-family="Arial" font-size="11" fill="#E0E0E0">MonthName, Quarter</text>
+    <text x="48" y="697" font-family="Arial" font-size="11" fill="#E0E0E0">QuarterName, Year</text>
+    <text x="48" y="715" font-family="Arial" font-size="11" fill="#FFB347">⚡ YearMonth</text>
+    <text x="48" y="733" font-family="Arial" font-size="11" fill="#E0E0E0">IsWeekend, FiscalYear</text>
+    <rect x="50" y="742" width="230" height="14" rx="7" fill="#000" fill-opacity="0.3"/>
+    <text x="165" y="753" font-family="Arial" font-size="10" fill="#FFB3B3" text-anchor="middle" font-weight="bold">1096 Days (2022-2024)</text>
+    <text x="170" y="788" font-family="Arial" font-size="11" fill="#FF6666" text-anchor="middle" font-weight="bold">Many (*) ←→ One (1)</text>
+  </g>
+
+  <!-- ============ RELATIONSHIP LINES ============ -->
+  <!-- Patients to Fact -->
+  <line x1="300" y1="395" x2="430" y2="420" stroke="#98FF98" stroke-width="2.5" stroke-dasharray="8,4"/>
+  <circle cx="300" cy="395" r="6" fill="#98FF98"/>
+  <text x="355" y="405" font-family="Arial" font-size="10" fill="#98FF98" text-anchor="middle">*</text>
+  <text x="420" y="415" font-family="Arial" font-size="10" fill="#98FF98" text-anchor="end">1</text>
+
+  <!-- Diagnoses to Fact -->
+  <line x1="525" y1="290" x2="525" y2="310" stroke="#98FF98" stroke-width="2.5" stroke-dasharray="8,4"/>
+  <circle cx="525" cy="290" r="6" fill="#98FF98"/>
+  <text x="515" y="305" font-family="Arial" font-size="10" fill="#98FF98" text-anchor="end">*</text>
+  <text x="535" y="305" font-family="Arial" font-size="10" fill="#98FF98">1</text>
+
+  <!-- Doctors to Fact -->
+  <line x1="900" y1="370" x2="770" y2="455" stroke="#98FF98" stroke-width="2.5" stroke-dasharray="8,4"/>
+  <circle cx="900" cy="370" r="6" fill="#98FF98"/>
+  <text x="845" y="405" font-family="Arial" font-size="10" fill="#98FF98" text-anchor="middle">* → 1</text>
+
+  <!-- Hospitals to Fact -->
+  <line x1="850" y1="620" x2="770" y2="565" stroke="#98FF98" stroke-width="2.5" stroke-dasharray="8,4"/>
+  <circle cx="850" cy="620" r="6" fill="#98FF98"/>
+  <text x="802" y="598" font-family="Arial" font-size="10" fill="#98FF98" text-anchor="middle">* → 1</text>
+
+  <!-- Date to Fact -->
+  <line x1="310" y1="640" x2="430" y2="575" stroke="#FF9999" stroke-width="2.5" stroke-dasharray="8,4"/>
+  <circle cx="310" cy="640" r="6" fill="#FF9999"/>
+  <text x="365" y="605" font-family="Arial" font-size="10" fill="#FF9999" text-anchor="middle">* → 1</text>
+
+  <!-- ============ BOTTOM STATS BAR ============ -->
+  <rect x="0" y="845" width="1200" height="55" fill="#1F4E79" opacity="0.9"/>
+  <rect x="0" y="845" width="1200" height="3" fill="#00B0F0"/>
+  
+  <!-- Stats -->
+  <text x="120" y="870" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">687</text>
+  <text x="120" y="887" font-family="Arial" font-size="11" fill="#BDD7EE" text-anchor="middle">Treatment Records</text>
+  
+  <line x1="240" y1="855" x2="240" y2="893" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="350" y="870" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">542</text>
+  <text x="350" y="887" font-family="Arial" font-size="11" fill="#BDD7EE" text-anchor="middle">Unique Patients</text>
+  
+  <line x1="470" y1="855" x2="470" y2="893" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="580" y="870" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">25</text>
+  <text x="580" y="887" font-family="Arial" font-size="11" fill="#BDD7EE" text-anchor="middle">Diagnosis Types</text>
+  
+  <line x1="700" y1="855" x2="700" y2="893" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="810" y="870" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">15</text>
+  <text x="810" y="887" font-family="Arial" font-size="11" fill="#BDD7EE" text-anchor="middle">Doctors</text>
+  
+  <line x1="930" y1="855" x2="930" y2="893" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="1040" y="870" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">8</text>
+  <text x="1040" y="887" font-family="Arial" font-size="11" fill="#BDD7EE" text-anchor="middle">Hospitals</text>
+  
+  <line x1="1100" y1="855" x2="1100" y2="893" stroke="#FFFFFF" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="1155" y="870" font-family="Arial" font-size="14" font-weight="bold" fill="#FFD700" text-anchor="middle">3 Years</text>
+  <text x="1155" y="887" font-family="Arial" font-size="11" fill="#BDD7EE" text-anchor="middle">2022 — 2024</text>
+</svg>

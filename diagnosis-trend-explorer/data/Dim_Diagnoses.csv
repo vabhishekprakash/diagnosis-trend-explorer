@@ -1,0 +1,26 @@
+DiagnosisID,DiagnosisName,ICDCode,Category,SubCategory,Severity,IsChronicDisease,DepartmentMapping
+DGN-001,Type 2 Diabetes Mellitus,E11,Endocrine,Metabolic Disorders,Moderate,Yes,Internal Medicine
+DGN-002,Hypertension,I10,Cardiovascular,Blood Pressure Disorders,Moderate,Yes,Cardiology
+DGN-003,Acute Upper Respiratory Infection,J06,Respiratory,Infections,Mild,No,General Medicine
+DGN-004,Coronary Artery Disease,I25,Cardiovascular,Ischemic Heart Disease,Severe,Yes,Cardiology
+DGN-005,Osteoarthritis,M19,Musculoskeletal,Joint Disorders,Mild,Yes,Orthopedics
+DGN-006,Acute Gastroenteritis,A09,Gastrointestinal,Infections,Mild,No,General Medicine
+DGN-007,Chronic Kidney Disease,N18,Renal,Kidney Disorders,Severe,Yes,Nephrology
+DGN-008,Asthma,J45,Respiratory,Obstructive Lung Disease,Moderate,Yes,Pulmonology
+DGN-009,Dengue Fever,A90,Infectious Disease,Vector-borne,Moderate,No,General Medicine
+DGN-010,Thyroid Disorders,E07,Endocrine,Thyroid Disease,Mild,Yes,Endocrinology
+DGN-011,Anemia,D64,Hematology,Blood Disorders,Moderate,No,Internal Medicine
+DGN-012,Acute Myocardial Infarction,I21,Cardiovascular,Heart Attack,Critical,No,Cardiology
+DGN-013,Urinary Tract Infection,N39,Renal,Infections,Mild,No,General Medicine
+DGN-014,Depression and Anxiety,F41,Mental Health,Mood Disorders,Moderate,No,Psychiatry
+DGN-015,Lumbar Disc Disease,M51,Musculoskeletal,Spine Disorders,Moderate,Yes,Orthopedics
+DGN-016,Migraine,G43,Neurological,Headache Disorders,Moderate,Yes,Neurology
+DGN-017,Peptic Ulcer Disease,K27,Gastrointestinal,Ulcers,Moderate,No,Gastroenterology
+DGN-018,Stroke (CVA),I63,Neurological,Cerebrovascular,Critical,No,Neurology
+DGN-019,Pneumonia,J18,Respiratory,Infections,Severe,No,Pulmonology
+DGN-020,Liver Cirrhosis,K74,Gastrointestinal,Liver Disease,Severe,Yes,Gastroenterology
+DGN-021,Breast Cancer,C50,Oncology,Malignant Tumors,Severe,No,Oncology
+DGN-022,Cataract,H26,Ophthalmology,Eye Disorders,Mild,No,Ophthalmology
+DGN-023,Appendicitis,K35,Gastrointestinal,Acute Abdomen,Severe,No,Surgery
+DGN-024,Dengue Hemorrhagic Fever,A91,Infectious Disease,Vector-borne,Critical,No,General Medicine
+DGN-025,Malaria,B54,Infectious Disease,Vector-borne,Moderate,No,General Medicine

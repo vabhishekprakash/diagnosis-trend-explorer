@@ -1,0 +1,16 @@
+DoctorID,DoctorName,Specialization,Department,Qualification,YearsOfExperience,HospitalID,ConsultationFee
+DOC-001,Dr. Priya Menon,Endocrinology,Internal Medicine,"MBBS, MD",12,HSP-001,1000
+DOC-002,Dr. Rajan Krishnamurthy,Cardiology,Cardiology,"MBBS, MD, DM",18,HSP-001,1500
+DOC-003,Dr. Ananya Reddy,General Medicine,General Medicine,"MBBS, MD",8,HSP-002,700
+DOC-004,Dr. Suresh Babu,Orthopedics,Orthopedics,"MBBS, MS",15,HSP-002,900
+DOC-005,Dr. Kavitha Sharma,Nephrology,Nephrology,"MBBS, MD, DM",10,HSP-003,1200
+DOC-006,Dr. Mohan Das,Pulmonology,Pulmonology,"MBBS, MD",14,HSP-003,1000
+DOC-007,Dr. Sunitha Rao,Psychiatry,Psychiatry,"MBBS, MD",9,HSP-004,800
+DOC-008,Dr. Venkat Naidu,Neurology,Neurology,"MBBS, MD, DM",20,HSP-004,1400
+DOC-009,Dr. Lakshmi Prasad,Gastroenterology,Gastroenterology,"MBBS, MD, DM",16,HSP-005,1100
+DOC-010,Dr. Arun Kumar,Oncology,Oncology,"MBBS, MD",11,HSP-005,1600
+DOC-011,Dr. Sneha Pillai,Ophthalmology,Ophthalmology,"MBBS, MS",7,HSP-006,600
+DOC-012,Dr. Ramesh Gupta,Surgery,Surgery,"MBBS, MS, MCh",22,HSP-006,1300
+DOC-013,Dr. Divya Iyer,General Medicine,General Medicine,"MBBS, MD",5,HSP-007,650
+DOC-014,Dr. Kiran Reddy,Cardiology,Cardiology,"MBBS, MD, DM",13,HSP-007,1400
+DOC-015,Dr. Padma Nair,Internal Medicine,Internal Medicine,"MBBS, MD",17,HSP-008,750

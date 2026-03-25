@@ -1,0 +1,10 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Office temp files
+~$*.docx
+~$*.xlsx
+
+# Large binary exports
+*.bmp
